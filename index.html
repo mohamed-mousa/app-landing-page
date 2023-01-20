@@ -72,7 +72,7 @@
       </div>
     </nav>
 
-    <header class="relative pt-16 md:pt-24 lg:pt-42">
+    <header class="relative pt-16 md:pt-24 lg:pt-42 mb-12">
       <div
         class="absolute inset-0 bottom-8 md:bottom-24 xl:bottom-32 -z-10 bg-gradient-to-b from-amber-400 to-amber-600"
       ></div>
@@ -90,9 +90,7 @@
       </div>
     </header>
 
-    <main
-      class="grid gap-12 sm:gap-16 md:gap-24 lg:gap-32 overflow-hidden px-8"
-    >
+    <main class="grid overflow-hidden px-8">
       <a
         href="#"
         class="flex bg-amber-400 text-neutral-900 mx-auto px-6 py-1 rounded-md shadow-lg transition-all hover:shadow-none hover:opacity-90 my-12 gap-2"
@@ -115,7 +113,7 @@
         <span>Download the app</span>
       </a>
 
-      <section class="relative" aria-labelledby="qualities">
+      <section class="relative mb-16" aria-labelledby="qualities">
         <img
           src="./assets/dots.svg"
           alt="dots"
@@ -206,7 +204,7 @@
 
       <section
         aria-labelledby="partners"
-        class="grid gap-8 text-center place-items-center text-neutral-900"
+        class="grid gap-8 mb-12 text-center place-items-center text-neutral-900"
       >
         <div class="grid gap-4">
           <h2 id="partners" class="text-4xl text-amber-400 font-bold">
@@ -261,7 +259,7 @@
         </div>
       </section>
 
-      <section aria-labelledby="home" class="relative">
+      <section aria-labelledby="home" class="relative lg:mb-5">
         <div class="flex flex-wrap-reverse gap-8 justify-center">
           <div
             class="flex gap-6 flex-wrap flex-col items-start lg:justify-center"
@@ -299,11 +297,70 @@
 
       <section
         aria-labelledby="contact"
-        class="container mx-auto px-8 overflow-hidden bg-slate-900"
+        class="container mx-auto px-8 mb-5 overflow-hidden"
       >
-        <div
-          class="flex flex-wrap justify-center gap-12 md:gap-6 lg:gap-20 bg-slate-400 p-20"
-        ></div>
+        <div class="md:max-w-2xl relative mx-auto">
+          <img
+            src="./assets/lamp.png"
+            alt="lamp"
+            class="mx-auto relative -z-20"
+          />
+          <form
+            class="relative border-8 border-neutral-900 p-6 rounded-lg grid gap-8 my-4 md:my-12 lg:my-16 bg-white dark:bg-neutral-800 w-full"
+          >
+            <h2 id="contact" class="text-3xl text-neutral-900 font-bold">
+              Lets Connect
+            </h2>
+            <div class="relative">
+              <input
+                placeholder="Your Name"
+                type="text"
+                class="w-full peer border-4 border-amber-400 rounded-md focus:ring-2 focus:ring-offset-0 focus:outline-none focus:ring-amber-400 focus:border-amber-400 text-neutral-900 dark:bg-amber-400 placeholder-transparent"
+              />
+              <label
+                for="name"
+                class="peer-placeholder-shown:left-4 peer-placeholder-shown:top-1/2 peer-focus:left-2 dark:peer-focus:text-neutral-300 peer-focus:text-neutral-600 peer-focus:-top-4 text-neutral-600 text-sm font-bold uppercase absolute -top-4 -translate-y-1/2 left-2 transition-all duration-500"
+                >your name</label
+              >
+            </div>
+
+            <div class="relative">
+              <input
+                placeholder="Your Email"
+                type="email"
+                class="w-full peer border-4 border-amber-400 rounded-md focus:ring-2 focus:ring-offset-0 focus:outline-none focus:ring-amber-400 focus:border-amber-400 text-neutral-900 dark:bg-amber-400 placeholder-transparent"
+              />
+              <label
+                for="email"
+                class="peer-placeholder-shown:left-4 peer-placeholder-shown:top-1/2 peer-focus:left-2 dark:peer-focus:text-neutral-300 peer-focus:text-neutral-600 peer-focus:-top-4 text-neutral-600 text-sm font-bold uppercase absolute -top-4 -translate-y-1/2 left-2 transition-all duration-500"
+                >your Email</label
+              >
+            </div>
+
+            <div class="relative">
+              <textarea
+                placeholder="Your Email"
+                type="message"
+                class="w-full peer border-4 border-amber-400 rounded-md focus:ring-2 focus:ring-offset-0 focus:outline-none focus:ring-amber-400 focus:border-amber-400 text-neutral-900 dark:bg-amber-400 placeholder-transparent resize-none"
+                rows="5"
+              ></textarea>
+              <label
+                for="message"
+                class="peer-placeholder-shown:left-4 peer-placeholder-shown:top-7 peer-focus:left-2 dark:peer-focus:text-neutral-300 peer-focus:text-neutral-600 peer-focus:-top-4 text-neutral-600 text-sm font-bold uppercase absolute -top-4 -translate-y-1/2 left-2 transition-all duration-500"
+                >your Message
+              </label>
+            </div>
+
+            <div class="div">
+              <button
+                type="submit"
+                class="hover:opacity-90 hover:shadow-none transition-all bg-neutral-900 text-white rounded-md shadow-lg px-6 py-2"
+              >
+                Send Message
+              </button>
+            </div>
+          </form>
+        </div>
       </section>
     </main>
     <script type="module" src="/main.js"></script>
